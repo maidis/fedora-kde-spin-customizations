@@ -36,24 +36,24 @@ sudo dnf copr enable gicmo/nursery
 sudo dnf install gamemode
 ```
 
-# Installation of some of my favorite software
+# My favorite software
 ```bash
 #TODO: Install LibreOffice components individually
 sudo dnf install gimp blender inkscape krita okteta libreoffice
 ```
 
-# Enabling third-party repositories
+# Third-party repositories
 ```bash
 sudo dnf install fedora-workstation-repositories
 ```
 
-# Google Chrome installation
+# Google Chrome
 ```bash
 sudo dnf config-manager --set-enabled google-chrome
 sudo dnf install google-chrome-stable
 ```
 
-# VirtualBox installation
+# VirtualBox
 ```bash
 cd /etc/yum.repos.d/
 sudo wget http://download.virtualbox.org/virtualbox/rpm/fedora/virtualbox.repo
@@ -63,7 +63,7 @@ sudo dnf install VirtualBox-5.2
 sudo usermod -a -G vboxusers maidis
 ```
 
-# Installation of some development tools
+# Development tools
 ```bash
 sudo dnf install SFML-devel
 sudo dnf install qt-creator* qt5-devel qt5 qt5*-devel
@@ -88,17 +88,17 @@ sudo dnf remove abrt
 sudo dnf remove dnfdragora dnfdragora-updater
 ```
 
-# Enabling RPM Fusion repositories
+# RPM Fusion
 ```bash
 sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 ```
 
-# Turn off unneeded system services
+# Unneeded system services
 ```bash
 sudo systemctl disable initial-setup.service
 ```
 
-# Cutelyst installation
+# Cutelyst
 ```bash
 cd /etc/yum.repos.d/
 sudo wget https://download.opensuse.org/repositories/home:/buschmann23:/Cutelyst:/devel/Fedora_28/home:buschmann23:Cutelyst:devel.repo
@@ -106,7 +106,7 @@ sudo dnf check-update
 sudo dnf install cutelyst2-devel
 ```
 
-# Visual Studio Code installation
+# Visual Studio Code
 ```bash
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
@@ -114,7 +114,7 @@ sudo dnf check-update
 sudo dnf install code
 ```
 
-# .NET Core installation
+# .NET Core
 ```bash
 sudo rpm -Uvh https://packages.microsoft.com/config/rhel/7/packages-microsoft-prod.rpm
 sudo dnf update
@@ -122,7 +122,7 @@ sudo dnf install libunwind libicu compat-openssl10
 sudo dnf install dotnet-sdk-2.1.200
 ```
 
-# OBS installation
+# OBS
 ```bash
 sudo dnf install obs-studio
 sudo dnf install gstreamer1-plugins-good gstreamer-ffmpeg gstreamer1-libav
@@ -138,7 +138,7 @@ sudo firewall-cmd --zone=public --permanent --add-port=1714-1764/udp
 sudo systemctl restart firewalld.service
 ```
 
-# Installation of HP printer drivers
+# HP printer drivers
 ```bash
 sudo dnf install hplip hplip-libs hplip-gui hplip-common
 sudo dnf install skanlite
@@ -156,7 +156,7 @@ cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
 ~/.dropbox-dist/dropboxd
 ```
 
-# Installation of some multimedia packages
+# Multimedia packages
 ```bash
 sudo dnf -y install gstreamer-plugins-base gstreamer1-plugins-base gstreamer-plugins-bad gstreamer-plugins-ugly gstreamer1-plugins-ugly gstreamer-plugins-good-extras gstreamer1-plugins-good-extras gstreamer1-plugins-bad-freeworld ffmpeg gstreamer-ffmpeg
 ```
@@ -169,12 +169,12 @@ sudo echo 'fastestmirror=true' >> /etc/dnf/dnf.conf
 sudo echo 'deltarpm=true' >> /etc/dnf/dnf.conf
 ```
 
-# Installation of some system performance monitoring tools
+# Tools
 ```bash
-sudo dnf install htop
+sudo dnf install htop p7zip xclip
 ```
 
-# Installation of some audio/video software
+# Audio/video software
 ```bash
 sudo dnf install audacity lmms kdenlive vlc
 ```
@@ -193,7 +193,7 @@ fi
 EOL
 ```
 
-# Using GRUB theme
+# GRUB themes
 ```bash
 #TODO sudo is not enough here
 sudo dnf install grub2-breeze-theme
@@ -225,4 +225,9 @@ setenforce 0
 # Screen temperature control
 ```bash
 sudo dnf install redshift plasma-applet-redshift-control
+```
+
+# Fonts
+```bash
+sudo dnf install impallari-raleway-fonts google-roboto-fonts google-roboto-mono-fonts google-noto-mono-fonts google-noto-sans-fonts google-noto-serif-fonts lato-fonts
 ```
