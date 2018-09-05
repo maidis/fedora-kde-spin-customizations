@@ -68,6 +68,7 @@ sudo usermod -a -G vboxusers maidis
 sudo dnf install SFML-devel
 sudo dnf install qt-creator* qt5-devel qt5 qt5*-devel
 sudo dnf install fedora-packager
+sudo dnf groupinstall 'C Development Tools and Libraries'
 sudo dnf install kate
 sudo dnf install clang-analyzer clang
 ```
@@ -173,7 +174,7 @@ sudo echo 'deltarpm=true' >> /etc/dnf/dnf.conf
 
 # Tools
 ```bash
-sudo dnf install htop p7zip unrar xclip
+sudo dnf install htop p7zip p7zip-plugins unrar xclip
 ```
 
 # Audio/video software
