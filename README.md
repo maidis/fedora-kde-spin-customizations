@@ -38,8 +38,8 @@ sudo dnf install gamemode
 
 # My favorite software
 ```bash
-#TODO: Install LibreOffice components individually
-sudo dnf install gimp blender inkscape krita okteta libreoffice
+sudo dnf install gimp blender inkscape krita okteta
+sudo dnf install libreoffice-writer libreoffice-impress libreoffice-calc libreoffice-draw libreoffice-graphicfilter libreoffice-math
 ```
 
 # Third-party repositories
