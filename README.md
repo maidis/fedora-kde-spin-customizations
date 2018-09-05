@@ -171,7 +171,7 @@ sudo echo 'deltarpm=true' >> /etc/dnf/dnf.conf
 
 # Tools
 ```bash
-sudo dnf install htop p7zip xclip
+sudo dnf install htop p7zip unrar xclip
 ```
 
 # Audio/video software
