@@ -231,3 +231,8 @@ sudo dnf install redshift plasma-applet-redshift-control
 ```bash
 sudo dnf install impallari-raleway-fonts google-roboto-fonts google-roboto-mono-fonts google-noto-mono-fonts google-noto-sans-fonts google-noto-serif-fonts lato-fonts
 ```
+
+#  LaTeX editors
+```bash
+sudo dnf install lyx texmaker
+```
