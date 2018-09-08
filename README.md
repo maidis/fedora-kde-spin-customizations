@@ -123,6 +123,8 @@ sudo rpm -Uvh https://packages.microsoft.com/config/rhel/7/packages-microsoft-pr
 sudo dnf update
 sudo dnf install libunwind libicu compat-openssl10
 sudo dnf install dotnet-sdk-2.1.200
+sudo dnf install https://rpms.remirepo.net/fedora/remi-release-28.rpm
+sudo dnf --enablerepo=remi install libui-devel
 ```
 
 # OBS
