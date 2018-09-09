@@ -253,6 +253,6 @@ sudo dnf install lyx texmaker
 
 # Maths
 ```bash
-sudo dnf install armadillo-devel octave scilab
+sudo dnf install armadillo-devel octave scilab cantor
 ```
 
