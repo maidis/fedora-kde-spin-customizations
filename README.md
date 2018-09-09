@@ -68,6 +68,7 @@ sudo usermod -a -G vboxusers maidis
 sudo dnf install SFML-devel
 sudo dnf install SDL2-devel SDL2_gfx-devel SDL2_net-devel SDL2_ttf-devel SDL2_image-devel SDL2_mixer-devel
 sudo dnf install love
+sudo dnf install Box2D-devel
 sudo dnf install qt-creator* qt5-devel qt5 qt5*-devel
 sudo dnf install fedora-packager
 sudo dnf groupinstall 'C Development Tools and Libraries'
