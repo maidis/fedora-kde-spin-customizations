@@ -250,3 +250,9 @@ sudo dnf install impallari-raleway-fonts google-roboto-fonts google-roboto-mono-
 ```bash
 sudo dnf install lyx texmaker
 ```
+
+# Maths
+```bash
+sudo dnf install armadillo-devel octave scilab
+```
+
