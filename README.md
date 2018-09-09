@@ -183,7 +183,9 @@ sudo dnf install htop p7zip p7zip-plugins unrar xclip
 
 # Audio/video software
 ```bash
-sudo dnf install audacity lmms kdenlive vlc
+sudo dnf install audacity lmms kdenlive vlc flowblade 
+#TODO: use this for now after manually download: sudo dnf localinstall cinelerra-5.1-fedora28-20180901.x86_64.rpm 
+sudo dnf install cinelerra --repofrompath cincv,https://cinelerra-cv.org/five/pkgs/fedora/
 ```
 
 # Terminal enhancements
