@@ -216,6 +216,22 @@ sed -i 's/GRUB_TERMINAL_OUTPUT="console"/#GRUB_TERMINAL_OUTPUT="console"/g' /etc
 grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
 ```
 
+# Restore Windows 10 entry in Grub
+#grub> search -f /EFI/Microsoft/Boot/bootmgfw.efi
+
+#hd1,gpt2
+```bash
+sudo cat >> /etc/grub.d/40_custom <<EOL
+menuentry 'Microsoft Windows 10' {
+set root='hd1,gpt2'
+chainloader /EFI/Microsoft/Boot/bootmgfw.efi
+boot
+}
+EOL
+
+sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
+```
+
 # Password-free local partition mount
 ```bash
 #TODO sudo is not enough here
