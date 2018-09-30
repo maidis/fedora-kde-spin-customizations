@@ -182,7 +182,7 @@ sudo dnf install htop p7zip p7zip-plugins unrar xclip
 
 # Audio/video software
 ```bash
-sudo dnf install audacity lmms kdenlive vlc flowblade 
+sudo dnf install audacity lmms kdenlive vlc flowblade avidemux-qt
 cat >> /etc/yum.repos.d/cincv.repo <<EOL
 [cincv]
 name=cincv
