@@ -71,7 +71,7 @@ sudo dnf install qt-creator* qt5-devel qt5 qt5*-devel
 sudo dnf install fedora-packager astyle doxygen
 sudo dnf groupinstall 'C Development Tools and Libraries'
 sudo dnf install kate
-sudo dnf install clang-analyzer clang
+sudo dnf install clang-analyzer clang clang-tools-extra
 ```
 
 # Removal of some unused pre-installed software
