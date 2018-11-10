@@ -72,6 +72,7 @@ sudo dnf install fedora-packager astyle doxygen
 sudo dnf groupinstall 'C Development Tools and Libraries'
 sudo dnf install kate
 sudo dnf install clang-analyzer clang clang-tools-extra
+sudo dnf install json-devel jsoncpp-devel curl-devel curlpp-devel gtest-devel tesseract-devel
 ```
 
 # Removal of some unused pre-installed software
