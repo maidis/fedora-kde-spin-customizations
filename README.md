@@ -80,15 +80,11 @@ sudo dnf install json-devel jsoncpp-devel curl-devel curlpp-devel gtest-devel te
 #TODO: some package names may be incorrect, they may not be removed (due to dependencies)
 sudo dnf remove kwrite akregator dragon konqueror korganizer kpat kmahjongg kmines kmag kontact kmail knode kf5-ktnef 
 
-sudo dnf remove ktp*
-sudo dnf remove calligra*
-sudo dnf remove dnfdragora
+sudo dnf remove kget ktp* calligra* dnfdragora
 
 sudo dnf remove pim-data-exporter akonadi-import-wizard kwalletmanager5
 
-sudo dnf remove abrt
-
-sudo dnf remove dnfdragora dnfdragora-updater
+sudo dnf remove abrt dnfdragora dnfdragora-updater
 ```
 
 # RPM Fusion
