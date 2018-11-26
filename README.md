@@ -39,7 +39,6 @@ sudo dnf install gamemode
 # My favorite software
 ```bash
 sudo dnf install gimp blender inkscape krita okteta
-sudo dnf install libreoffice-writer libreoffice-impress libreoffice-calc libreoffice-draw libreoffice-graphicfilter libreoffice-math
 ```
 
 # Third-party repositories
@@ -261,9 +260,11 @@ sudo dnf install cabextract
 sudo rpm -i https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm
 ```
 
-#  LaTeX editors
+#  Document editing
 ```bash
 sudo dnf install lyx texmaker
+sudo dnf install pandoc
+sudo dnf install libreoffice-writer libreoffice-impress libreoffice-calc libreoffice-draw libreoffice-graphicfilter libreoffice-math
 ```
 
 # Maths
