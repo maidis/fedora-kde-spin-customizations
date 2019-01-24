@@ -272,3 +272,9 @@ sudo dnf install libreoffice-writer libreoffice-impress libreoffice-calc libreof
 sudo dnf install armadillo-devel octave scilab cantor gmp-devel glm-devel mpfr-devel
 ```
 
+# Sublime Text
+```bash
+sudo rpm -v --import https://download.sublimetext.com/sublimehq-rpm-pub.gpg
+sudo dnf config-manager --add-repo https://download.sublimetext.com/rpm/stable/x86_64/sublime-text.repo
+sudo dnf install sublime-text
+```
