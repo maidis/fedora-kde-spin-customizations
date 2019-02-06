@@ -187,6 +187,7 @@ gpgcheck=0
 # end of cincv
 EOL
 sudo dnf install cinelerra
+sudo dnf install https://www.ocenaudio.com/start_download/ocenaudio_centos7.rpm
 ```
 
 # Terminal enhancements
