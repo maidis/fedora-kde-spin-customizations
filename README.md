@@ -6,18 +6,10 @@ My efforts to make Fedora KDE spin more usable for my needs
 sudo dnf update --refresh
 ```
 
-# Nasty NVIDIA drivers
+# NVIDIA drivers
 ```bash
 sudo dnf config-manager --add-repo=https://negativo17.org/repos/fedora-nvidia.repo
-sudo dnf install nvidia-driver kernel-devel akmod-nvidia dkms acpi
-
-sudo dnf copr enable chenxiaolong/bumblebee
-sudo dnf install akmod-bbswitch bumblebee primus
-
-sudo gpasswd -a $USER bumblebee
-
-sudo systemctl enable bumblebeed
-sudo systemctl disable nvidia-fallback
+sudo dnf install nvidia-driver kernel-devel dkms-nvidia dkms acpi
 
 sudo dnf install nvidia-settings nvidia-driver-libs.i686
 
@@ -28,12 +20,7 @@ sudo dnf update --refresh
 # Steam installation
 ```bash
 sudo dnf config-manager --add-repo=https://negativo17.org/repos/fedora-steam.repo
-sudo dnf -y install steam
-sudo dnf install libnsl.i686 libnsl2.i686
-
-sudo dnf install meson systemd-devel pkg-config git
-sudo dnf copr enable gicmo/nursery
-sudo dnf install gamemode
+sudo dnf -y install steam libnsl.i686 libnsl2.i686 kernel-modules-extra gamemode
 ```
 
 # My favorite software
@@ -69,7 +56,7 @@ sudo dnf install SDL2-devel SDL2_gfx-devel SDL2_net-devel SDL2_ttf-devel SDL2_im
 sudo dnf install qt-creator* qt5-devel qt5 qt5*-devel
 sudo dnf install fedora-packager astyle doxygen graphviz-devel
 sudo dnf groupinstall 'C Development Tools and Libraries'
-sudo dnf install kate
+sudo dnf install kate git
 sudo dnf install clang-analyzer clang clang-tools-extra
 sudo dnf install json-devel jsoncpp-devel curl-devel curlpp-devel gtest-devel tesseract-devel
 ```
