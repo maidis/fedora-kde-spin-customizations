@@ -13,7 +13,7 @@ sudo dnf install nvidia-driver kernel-devel dkms-nvidia dkms acpi
 
 sudo dnf install nvidia-settings nvidia-driver-libs.i686
 
-sudo yum -y install cuda nvidia-driver-cuda cuda-devel
+sudo dnf -y install cuda nvidia-driver-cuda cuda-devel
 sudo dnf update --refresh
 ```
 
@@ -45,7 +45,8 @@ cd /etc/yum.repos.d/
 sudo wget http://download.virtualbox.org/virtualbox/rpm/fedora/virtualbox.repo
 sudo dnf update --refresh
 sudo dnf install binutils gcc make patch libgomp glibc-headers glibc-devel kernel-headers kernel-devel dkms
-sudo dnf install VirtualBox-5.2
+sudo dnf install VirtualBox-6.0
+sudo dnf remove virtualbox-guest-additions
 sudo usermod -a -G vboxusers maidis
 ```
 
