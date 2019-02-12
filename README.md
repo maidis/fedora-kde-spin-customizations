@@ -9,11 +9,8 @@ sudo dnf update --refresh
 # NVIDIA drivers
 ```bash
 sudo dnf config-manager --add-repo=https://negativo17.org/repos/fedora-nvidia.repo
-sudo dnf install nvidia-driver kernel-devel dkms-nvidia dkms acpi
-
-sudo dnf install nvidia-settings nvidia-driver-libs.i686
-
-sudo dnf -y install cuda nvidia-driver-cuda cuda-devel
+sudo dnf install dkms-nvidia nvidia-driver nvidia-settings nvidia-driver-libs.i686
+sudo dnf install nvidia-driver-cuda cuda-devel
 sudo dnf update --refresh
 ```
 
