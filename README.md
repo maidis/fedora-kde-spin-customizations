@@ -87,7 +87,7 @@ sudo systemctl disable initial-setup.service
 # Cutelyst
 ```bash
 cd /etc/yum.repos.d/
-sudo wget https://download.opensuse.org/repositories/home:/buschmann23:/Cutelyst:/devel/Fedora_28/home:buschmann23:Cutelyst:devel.repo
+sudo wget https://download.opensuse.org/repositories/home:/buschmann23:/Cutelyst:/devel/Fedora_29/home:buschmann23:Cutelyst:devel.repo
 sudo dnf check-update
 sudo dnf install cutelyst2-devel
 ```
@@ -115,7 +115,7 @@ sudo dnf --enablerepo=remi install libui-devel
 sudo dnf install obs-studio
 sudo dnf install gstreamer1-plugins-good gstreamer-ffmpeg gstreamer1-libav
 sudo dnf config-manager --set-enabled fedora-cisco-openh264
-sudo dnf upgrade
+sudo dnf update --refresh
 sudo dnf install gstreamer1-plugin-openh264
 ```
 
