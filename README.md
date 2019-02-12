@@ -187,11 +187,10 @@ EOL
 
 # GRUB themes
 ```bash
-#TODO sudo is not enough here
 sudo dnf install grub2-breeze-theme
 sudo echo 'GRUB_THEME="/boot/grub2/themes/breeze/theme.txt"' >> /etc/default/grub
-sed -i 's/GRUB_TERMINAL_OUTPUT="console"/#GRUB_TERMINAL_OUTPUT="console"/g' /etc/default/grub
-grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
+sudo sed -i 's/GRUB_TERMINAL_OUTPUT="console"/#GRUB_TERMINAL_OUTPUT="console"/g' /etc/default/grub
+sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
 ```
 
 # Restore Windows 10 entry in Grub
