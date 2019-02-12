@@ -167,15 +167,8 @@ sudo dnf install htop p7zip p7zip-plugins unrar xclip
 # Audio/video software
 ```bash
 sudo dnf install audacity lmms kdenlive vlc flowblade avidemux-qt
-cat >> /etc/yum.repos.d/cincv.repo <<EOL
-[cincv]
-name=cincv
-baseurl=https://cinelerra-cv.org/five/pkgs/fedora/
-gpgcheck=0
-# end of cincv
-EOL
-sudo dnf install cinelerra
-sudo dnf install https://www.ocenaudio.com/start_download/ocenaudio_centos7.rpm
+sudo dnf install cinelerra --nogpgcheck --repofrompath cingg,https://cinelerra-gg.org/download/pkgs/fedora29
+sudo dnf install https://www.ocenaudio.com/downloads/ocenaudio_centos7.rpm
 ```
 
 # Terminal enhancements
