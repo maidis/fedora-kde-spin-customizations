@@ -76,11 +76,6 @@ sudo dnf remove abrt dnfdragora dnfdragora-updater
 sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 ```
 
-# Unneeded system services
-```bash
-sudo systemctl disable initial-setup.service
-```
-
 # Cutelyst
 ```bash
 cd /etc/yum.repos.d/
