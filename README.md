@@ -57,6 +57,7 @@ sudo dnf groupinstall 'C Development Tools and Libraries'
 sudo dnf install kate git
 sudo dnf install clang-analyzer clang clang-tools-extra
 sudo dnf install json-devel jsoncpp-devel curl-devel curlpp-devel gtest-devel tesseract-devel
+sudo dnf install opencv-devel opencv-core opencv-contrib
 ```
 
 # Removal of some unused pre-installed software
