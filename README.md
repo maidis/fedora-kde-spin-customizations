@@ -80,7 +80,7 @@ sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-rele
 # Cutelyst
 ```bash
 cd /etc/yum.repos.d/
-sudo wget https://download.opensuse.org/repositories/home:/buschmann23:/Cutelyst:/devel/Fedora_29/home:buschmann23:Cutelyst:devel.repo
+sudo wget https://download.opensuse.org/repositories/home:/buschmann23:/Cutelyst:/devel/Fedora_$(rpm -E %fedora)/home:buschmann23:Cutelyst:devel.repo
 sudo dnf check-update
 sudo dnf install cutelyst2-devel
 ```
