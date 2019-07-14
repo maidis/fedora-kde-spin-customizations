@@ -83,7 +83,7 @@ sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-rele
 cd /etc/yum.repos.d/
 sudo wget https://download.opensuse.org/repositories/home:/buschmann23:/Cutelyst:/devel/Fedora_$(rpm -E %fedora)/home:buschmann23:Cutelyst:devel.repo
 sudo dnf check-update
-sudo dnf install cutelyst2-devel
+sudo dnf install cutelyst2-devel grantlee-qt5-devel
 ```
 
 # Visual Studio Code
@@ -257,4 +257,9 @@ sudo dnf install sublime-text
 # Icon Themes
 ```bash
 sudo dnf install kfaenza-icon-theme papirus-icon-theme
+```
+
+# GTK Themes
+```bash
+sudo dnf install breeze-gtk
 ```
