@@ -263,3 +263,17 @@ sudo dnf install kfaenza-icon-theme papirus-icon-theme
 ```bash
 sudo dnf install breeze-gtk
 ```
+# GitHub
+```bash
+git config --global user.name "maidis"
+git config --global user.email "ozbekanil@gmail.com"
+
+ssh-keygen -t rsa -b 4096 -C "ozbekanil@gmail.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+xclip -sel clip < ~/.ssh/id_rsa.pub
+```
+- [Setting your username in Git](https://help.github.com/en/articles/setting-your-username-in-git)
+- [Setting your commit email address](https://help.github.com/en/articles/setting-your-commit-email-address)
+- [Generating a new SSH key and adding it to the ssh-agent](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+- [Adding a new SSH key to your GitHub account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account)
