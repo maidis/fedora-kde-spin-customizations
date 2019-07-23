@@ -55,7 +55,7 @@ sudo dnf install qt-creator* qt5-devel qt5 qt5*-devel
 sudo dnf install fedora-packager astyle doxygen graphviz-devel
 sudo dnf groupinstall 'C Development Tools and Libraries'
 sudo dnf install kate git
-sudo dnf install clang-analyzer clang clang-tools-extra
+sudo dnf install clang-analyzer clang clang-tools-extra cppcheck kcachegrind clazy uncrustify
 sudo dnf install json-devel jsoncpp-devel curl-devel curlpp-devel gtest-devel tesseract-devel
 sudo dnf install opencv-devel opencv-core opencv-contrib
 sudo dnf install godot terminology
