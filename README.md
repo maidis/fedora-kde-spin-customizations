@@ -16,6 +16,7 @@ sudo dnf update --refresh
 
 - [Black Screen on Login Screen](https://github.com/negativo17/nvidia-driver/issues/74)
 - [Crazy Progress Indicator Spinner](https://github.com/negativo17/nvidia-driver/issues/81)
+- [Fedora'da Nvidia DKMS Sürücüleri](https://anilozbek.blogspot.com/2019/08/fedorada-nvidia-dkms-suruculeri.html)
 
 # Steam installation
 ```bash
