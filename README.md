@@ -14,6 +14,9 @@ sudo dnf install nvidia-driver-cuda cuda-devel
 sudo dnf update --refresh
 ```
 
+- [Black Screen on Login Screen](https://github.com/negativo17/nvidia-driver/issues/74)
+- [Crazy Progress Indicator Spinner](https://github.com/negativo17/nvidia-driver/issues/81)
+
 # Steam installation
 ```bash
 sudo dnf config-manager --add-repo=https://negativo17.org/repos/fedora-steam.repo
@@ -273,13 +276,13 @@ eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
 xclip -sel clip < ~/.ssh/id_rsa.pub
 ```
-# GIMP
-```bash
-sudo dnf install gimp gmic-gimp gimp-lensfun gimp-resynthesizer gimp-wavelet-denoise-plugin gimp-wavelet-decompose gimp-luminosity-masks GREYCstoration-gimp ufraw-gimp gimp-elsamuko gimp-normalmap gimpfx-foundry gimp-lqr-plugin gimp-data-extras gimp-heif-plugin gimp-paint-studio gimp-fourier-plugin gimp-focusblur-plugin gimp-high-pass-filter gimp-layer-via-copy-cut
-```
-
 
 - [Setting your username in Git](https://help.github.com/en/articles/setting-your-username-in-git)
 - [Setting your commit email address](https://help.github.com/en/articles/setting-your-commit-email-address)
 - [Generating a new SSH key and adding it to the ssh-agent](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 - [Adding a new SSH key to your GitHub account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account)
+
+# GIMP
+```bash
+sudo dnf install gimp gmic-gimp gimp-lensfun gimp-resynthesizer gimp-wavelet-denoise-plugin gimp-wavelet-decompose gimp-luminosity-masks GREYCstoration-gimp ufraw-gimp gimp-elsamuko gimp-normalmap gimpfx-foundry gimp-lqr-plugin gimp-data-extras gimp-heif-plugin gimp-paint-studio gimp-fourier-plugin gimp-focusblur-plugin gimp-high-pass-filter gimp-layer-via-copy-cut
+```
