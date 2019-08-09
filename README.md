@@ -12,6 +12,9 @@ sudo dnf config-manager --add-repo=https://negativo17.org/repos/fedora-nvidia.re
 sudo dnf install dkms-nvidia nvidia-driver nvidia-settings nvidia-driver-libs.i686
 sudo dnf install nvidia-driver-cuda cuda-devel
 sudo dnf update --refresh
+
+sudo dnf copr enable zawertun/scrapyard
+sudo dnf install kde-style-sierra-breeze-enhanced
 ```
 
 - [Black Screen on Login Screen](https://github.com/negativo17/nvidia-driver/issues/74)
