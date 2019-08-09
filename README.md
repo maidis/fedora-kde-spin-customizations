@@ -22,7 +22,7 @@ sudo dnf -y install steam libnsl.i686 libnsl2.i686 kernel-modules-extra gamemode
 
 # My favorite software
 ```bash
-sudo dnf install gimp blender inkscape krita okteta
+sudo dnf install blender inkscape krita okteta
 ```
 
 # Third-party repositories
@@ -273,6 +273,12 @@ eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
 xclip -sel clip < ~/.ssh/id_rsa.pub
 ```
+# GIMP
+```bash
+sudo dnf install gimp gmic-gimp gimp-lensfun gimp-resynthesizer gimp-wavelet-denoise-plugin gimp-wavelet-decompose gimp-luminosity-masks GREYCstoration-gimp ufraw-gimp gimp-elsamuko gimp-normalmap gimpfx-foundry gimp-lqr-plugin gimp-data-extras gimp-heif-plugin gimp-paint-studio gimp-fourier-plugin gimp-focusblur-plugin gimp-high-pass-filter gimp-layer-via-copy-cut
+```
+
+
 - [Setting your username in Git](https://help.github.com/en/articles/setting-your-username-in-git)
 - [Setting your commit email address](https://help.github.com/en/articles/setting-your-commit-email-address)
 - [Generating a new SSH key and adding it to the ssh-agent](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
