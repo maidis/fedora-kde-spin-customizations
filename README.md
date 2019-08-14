@@ -170,7 +170,10 @@ sudo dnf install htop p7zip p7zip-plugins unrar xclip fatrace
 sudo dnf install audacity lmms kdenlive vlc flowblade avidemux-qt
 sudo dnf install cinelerra --nogpgcheck --repofrompath cingg,https://cinelerra-gg.org/download/pkgs/fedora29
 sudo dnf install https://www.ocenaudio.com/downloads/ocenaudio_centos7.rpm
+
+mkdir ~/.cache/vlc
 ```
+- [Unable to save subtitles on Linux](https://github.com/exebetche/vlsub/issues/213)
 
 # Terminal enhancements
 ```bash
