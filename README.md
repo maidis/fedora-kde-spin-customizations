@@ -65,7 +65,7 @@ sudo dnf install kate git
 sudo dnf install clang-analyzer clang clang-tools-extra cppcheck kcachegrind clazy uncrustify
 sudo dnf install json-devel jsoncpp-devel curl-devel curlpp-devel gtest-devel tesseract-devel
 sudo dnf install opencv-devel opencv-core opencv-contrib
-sudo dnf install godot terminology
+sudo dnf install godot terminology gperftools
 ```
 
 # Removal of some unused pre-installed software
