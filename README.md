@@ -29,7 +29,7 @@ sudo dnf -y install steam libnsl.i686 libnsl2.i686 kernel-modules-extra gamemode
 
 # My favorite software
 ```bash
-sudo dnf install blender inkscape krita okteta
+sudo dnf install blender inkscape okteta
 ```
 
 # Third-party repositories
@@ -289,7 +289,9 @@ xclip -sel clip < ~/.ssh/id_rsa.pub
 - [Generating a new SSH key and adding it to the ssh-agent](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 - [Adding a new SSH key to your GitHub account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account)
 
-# GIMP
+# Photo Editing
 ```bash
 sudo dnf install gimp gmic-gimp gimp-lensfun gimp-resynthesizer gimp-wavelet-denoise-plugin gimp-wavelet-decompose gimp-luminosity-masks GREYCstoration-gimp ufraw-gimp gimp-elsamuko gimp-normalmap gimpfx-foundry gimp-lqr-plugin gimp-data-extras gimp-heif-plugin gimp-paint-studio gimp-fourier-plugin gimp-focusblur-plugin gimp-high-pass-filter gimp-layer-via-copy-cut
+
+sudo dnf install krita luminance-hdr
 ```
