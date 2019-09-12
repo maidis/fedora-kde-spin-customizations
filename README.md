@@ -248,6 +248,7 @@ sudo rpm -i https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore
 #  Document editing
 ```bash
 sudo dnf install lyx texmaker
+sudo dnf install texlive-sourcesanspro texlive-tcolorbox texlive-babel-turkish
 sudo dnf install pandoc
 sudo dnf install libreoffice-writer libreoffice-impress libreoffice-calc libreoffice-draw libreoffice-graphicfilter libreoffice-math libreoffice-langpack-tr
 ```
