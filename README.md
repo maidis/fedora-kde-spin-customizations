@@ -29,7 +29,7 @@ sudo dkms install nvidia/440.64
 # CPU tools
 
 ```bash
-sudo dnf install thermald kernel-tools
+sudo dnf install thermald kernel-tools tlp powertop
 ```
 
 # Steam installation
