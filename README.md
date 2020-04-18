@@ -21,6 +21,17 @@ sudo dnf install kde-style-sierra-breeze-enhanced
 - [Crazy Progress Indicator Spinner](https://github.com/negativo17/nvidia-driver/issues/81)
 - [Fedora'da Nvidia DKMS Sürücüleri](https://anilozbek.blogspot.com/2019/08/fedorada-nvidia-dkms-suruculeri.html)
 
+```bash
+sudo rm -rf /var/lib/dkms/nvidia/
+sudo dkms install nvidia/440.64
+```
+
+# CPU tools
+
+```bash
+sudo dnf install thermald kernel-tools
+```
+
 # Steam installation
 ```bash
 sudo dnf config-manager --add-repo=https://negativo17.org/repos/fedora-steam.repo
