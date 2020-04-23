@@ -164,7 +164,7 @@ sudo dnf install dolphin-plugins
 
 # Multimedia packages
 ```bash
-sudo dnf -y install gstreamer-plugins-base gstreamer1-plugins-base gstreamer-plugins-bad gstreamer-plugins-ugly gstreamer1-plugins-ugly gstreamer-plugins-good-extras gstreamer1-plugins-good-extras gstreamer1-plugins-bad-freeworld ffmpeg gstreamer-ffmpeg gstreamer1-plugins-bad-free-extras mencoder youtube-dl
+sudo dnf -y install gstreamer-plugins-base gstreamer1-plugins-base gstreamer-plugins-bad gstreamer-plugins-ugly gstreamer1-plugins-ugly gstreamer-plugins-good-extras gstreamer1-plugins-good-extras gstreamer1-plugins-bad-freeworld ffmpeg gstreamer-ffmpeg gstreamer1-plugins-bad-free-extras mencoder youtube-dl elisa-player
 ```
 
 
@@ -182,7 +182,7 @@ sudo dnf install htop p7zip p7zip-plugins unrar xclip fatrace
 
 # Audio/video software
 ```bash
-sudo dnf install audacity lmms kdenlive vlc flowblade avidemux-qt
+sudo dnf install audacity lmms kdenlive vlc flowblade avidemux-qt mkvtoolnix-gui
 sudo dnf install cinelerra --nogpgcheck --repofrompath cingg,https://cinelerra-gg.org/download/pkgs/fedora29
 sudo dnf install https://www.ocenaudio.com/downloads/ocenaudio_centos7.rpm
 
