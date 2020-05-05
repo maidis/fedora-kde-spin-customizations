@@ -58,13 +58,15 @@ sudo dnf config-manager --set-enabled google-chrome
 sudo dnf install google-chrome-stable
 ```
 
+# RPM Fusion
+```bash
+sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+```
+
 # VirtualBox
 ```bash
-cd /etc/yum.repos.d/
-sudo wget http://download.virtualbox.org/virtualbox/rpm/fedora/virtualbox.repo
-sudo dnf update --refresh
+sudo dnf install VirtualBox
 sudo dnf install binutils gcc make patch libgomp glibc-headers glibc-devel kernel-headers kernel-devel dkms
-sudo dnf install VirtualBox-6.0
 sudo dnf remove virtualbox-guest-additions
 sudo usermod -a -G vboxusers maidis
 ```
@@ -93,11 +95,6 @@ sudo dnf remove kget ktp* calligra* dnfdragora
 sudo dnf remove pim-data-exporter akonadi-import-wizard kwalletmanager5
 
 sudo dnf remove abrt dnfdragora dnfdragora-updater
-```
-
-# RPM Fusion
-```bash
-sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 ```
 
 # Cutelyst
@@ -183,8 +180,8 @@ sudo dnf install htop p7zip p7zip-plugins unrar xclip fatrace
 # Audio/video software
 ```bash
 sudo dnf install audacity lmms kdenlive vlc flowblade avidemux-qt mkvtoolnix-gui
-sudo dnf install cinelerra --nogpgcheck --repofrompath cingg,https://cinelerra-gg.org/download/pkgs/fedora29
-sudo dnf install https://www.ocenaudio.com/downloads/ocenaudio_centos7.rpm
+sudo dnf install cinelerra --nogpgcheck --repofrompath cingg,https://cinelerra-gg.org/download/pkgs/fedora32
+sudo dnf install https://www.ocenaudio.com/downloads/ocenaudio_centos8.rpm
 
 mkdir ~/.cache/vlc
 ```
