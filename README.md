@@ -15,8 +15,10 @@ sudo dnf update --refresh
 
 sudo dnf copr enable zawertun/scrapyard
 sudo dnf install kde-style-sierra-breeze-enhanced
+sudo dnf install kvantum
 ```
 
+- [Layan](https://store.kde.org/p/1325246/)
 - [Black Screen on Login Screen](https://github.com/negativo17/nvidia-driver/issues/74)
 - [Crazy Progress Indicator Spinner](https://github.com/negativo17/nvidia-driver/issues/81)
 - [Fedora'da Nvidia DKMS Sürücüleri](https://anilozbek.blogspot.com/2019/08/fedorada-nvidia-dkms-suruculeri.html)
