@@ -99,10 +99,8 @@ sudo dnf remove abrt dnfdragora dnfdragora-updater
 
 # Cutelyst
 ```bash
-cd /etc/yum.repos.d/
-sudo wget https://download.opensuse.org/repositories/home:/buschmann23:/Cutelyst:/devel/Fedora_$(rpm -E %fedora)/home:buschmann23:Cutelyst:devel.repo
-sudo dnf check-update
-sudo dnf install cutelyst2-devel grantlee-qt5-devel
+sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/home:buschmann23:Cutelyst:devel/Fedora_32/home:buschmann23:Cutelyst:devel.repo
+sudo dnf install cutelyst2-devel
 ```
 
 # Visual Studio Code
