@@ -179,7 +179,7 @@ sudo dnf install htop p7zip p7zip-plugins unrar xclip fatrace
 
 # Audio/video software
 ```bash
-sudo dnf install audacity lmms kdenlive vlc flowblade avidemux-qt mkvtoolnix-gui
+sudo dnf install audacity lmms kdenlive vlc flowblade avidemux-qt mkvtoolnix-gui shotcut
 sudo dnf install cinelerra --nogpgcheck --repofrompath cingg,https://cinelerra-gg.org/download/pkgs/fedora32
 sudo dnf install https://www.ocenaudio.com/downloads/ocenaudio_centos8.rpm
 
