@@ -306,5 +306,5 @@ xclip -sel clip < ~/.ssh/id_rsa.pub
 ```bash
 sudo dnf install gimp gmic-gimp gimp-lensfun gimp-resynthesizer gimp-wavelet-denoise-plugin gimp-wavelet-decompose gimp-luminosity-masks GREYCstoration-gimp ufraw-gimp gimp-elsamuko gimp-normalmap gimpfx-foundry gimp-lqr-plugin gimp-data-extras gimp-heif-plugin gimp-paint-studio gimp-fourier-plugin gimp-focusblur-plugin gimp-high-pass-filter gimp-layer-via-copy-cut
 
-sudo dnf install krita luminance-hdr
+sudo dnf install krita luminance-hdr rawtherapee darktable darktable-tools-noise 
 ```
