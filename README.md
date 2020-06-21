@@ -108,19 +108,20 @@ sudo dnf install cutelyst2-devel
 # Visual Studio Code
 ```bash
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
-sudo dnf check-update
+cat <<EOF | sudo tee /etc/yum.repos.d/vscode.repo
+[code]
+name=Visual Studio Code
+baseurl=https://packages.microsoft.com/yumrepos/vscode
+enabled=1
+gpgcheck=1
+gpgkey=https://packages.microsoft.com/keys/microsoft.asc
+EOF
 sudo dnf install code
 ```
 
 # .NET Core
 ```bash
-sudo rpm -Uvh https://packages.microsoft.com/config/rhel/7/packages-microsoft-prod.rpm
-sudo dnf update
-sudo dnf install libunwind libicu compat-openssl10
-sudo dnf install dotnet-sdk-2.1.200
-sudo dnf install https://rpms.remirepo.net/fedora/remi-release-28.rpm
-sudo dnf --enablerepo=remi install libui-devel
+sudo dnf install dotnet-sdk-3.1
 ```
 
 # OBS
