@@ -3,7 +3,7 @@ My efforts to make Fedora KDE spin more usable for my needs
 
 # Full system update
 ```bash
-sudo dnf update --refresh
+sudo dnf upgrade --refresh
 ```
 
 # NVIDIA drivers
@@ -11,7 +11,7 @@ sudo dnf update --refresh
 sudo dnf config-manager --add-repo=https://negativo17.org/repos/fedora-nvidia.repo
 sudo dnf install dkms-nvidia nvidia-driver nvidia-settings nvidia-driver-libs.i686
 sudo dnf install nvidia-driver-cuda cuda-devel cuda-cudnn-devel cuda-gcc cuda-samples
-sudo dnf update --refresh
+sudo dnf upgrade --refresh
 
 sudo dnf copr enable zawertun/scrapyard
 sudo dnf install kde-style-sierra-breeze-enhanced
@@ -129,7 +129,7 @@ sudo dnf install dotnet-sdk-3.1
 sudo dnf install obs-studio
 sudo dnf install gstreamer1-plugins-good gstreamer-ffmpeg gstreamer1-libav
 sudo dnf config-manager --set-enabled fedora-cisco-openh264
-sudo dnf update --refresh
+sudo dnf upgrade --refresh
 sudo dnf install gstreamer1-plugin-openh264
 ```
 
