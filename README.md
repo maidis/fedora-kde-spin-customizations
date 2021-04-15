@@ -121,7 +121,7 @@ sudo dnf install code
 
 # .NET Core
 ```bash
-sudo dnf install dotnet-sdk-3.1
+sudo dnf install dotnet
 ```
 
 # OBS
@@ -165,14 +165,6 @@ sudo dnf install dolphin-plugins
 sudo dnf -y install gstreamer-plugins-base gstreamer1-plugins-base gstreamer-plugins-bad gstreamer-plugins-ugly gstreamer1-plugins-ugly gstreamer-plugins-good-extras gstreamer1-plugins-good-extras gstreamer1-plugins-bad-freeworld ffmpeg gstreamer-ffmpeg gstreamer1-plugins-bad-free-extras mencoder youtube-dl elisa-player
 ```
 
-
-# Set up DNF to use delta packages and fastest mirrors
-```bash
-#TODO: sudo is not enough here
-sudo echo 'fastestmirror=true' >> /etc/dnf/dnf.conf
-sudo echo 'deltarpm=true' >> /etc/dnf/dnf.conf
-```
-
 # Tools
 ```bash
 sudo dnf install htop p7zip p7zip-plugins unrar xclip fatrace
@@ -181,7 +173,7 @@ sudo dnf install htop p7zip p7zip-plugins unrar xclip fatrace
 # Audio/video software
 ```bash
 sudo dnf install audacity lmms kdenlive vlc flowblade avidemux-qt mkvtoolnix-gui shotcut
-sudo dnf install cinelerra --nogpgcheck --repofrompath cingg,https://cinelerra-gg.org/download/pkgs/fedora32
+sudo dnf install cinelerra-gg
 sudo dnf install https://www.ocenaudio.com/downloads/ocenaudio_centos8.rpm
 
 mkdir ~/.cache/vlc
@@ -241,19 +233,14 @@ EOL
 
 # Setting SELinux to permissive mode
 ```bash
-#TODO: sudo is not enough here, do i need that?
-sed -i -e 's/SELINUX=enforcing/SELINUX=permissive/g' /etc/selinux/config
-setenforce 0
-```
-
-# Screen temperature control
-```bash
-sudo dnf install redshift plasma-applet-redshift-control
+sudo sed -i -e 's/SELINUX=enforcing/SELINUX=permissive/g' /etc/selinux/config
+sudo setenforce 0
+getenforce
 ```
 
 # Fonts
 ```bash
-sudo dnf install impallari-raleway-fonts google-roboto-fonts google-roboto-mono-fonts google-noto-mono-fonts google-noto-sans-fonts google-noto-serif-fonts lato-fonts
+sudo dnf install impallari-raleway-fonts google-roboto-fonts google-roboto-mono-fonts google-noto-sans-fonts google-noto-serif-fonts lato-fonts
 sudo dnf install cabextract
 sudo rpm -i https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm
 ```
@@ -268,14 +255,7 @@ sudo dnf install libreoffice-writer libreoffice-impress libreoffice-calc libreof
 
 # Maths
 ```bash
-sudo dnf install armadillo-devel octave scilab cantor gmp-devel glm-devel mpfr-devel
-```
-
-# Sublime Text
-```bash
-sudo rpm -v --import https://download.sublimetext.com/sublimehq-rpm-pub.gpg
-sudo dnf config-manager --add-repo https://download.sublimetext.com/rpm/stable/x86_64/sublime-text.repo
-sudo dnf install sublime-text
+sudo dnf install armadillo-devel octave cantor gmp-devel glm-devel mpfr-devel
 ```
 
 # Icon Themes
@@ -305,7 +285,7 @@ xclip -sel clip < ~/.ssh/id_rsa.pub
 
 # Photo Editing
 ```bash
-sudo dnf install gimp gmic-gimp gimp-lensfun gimp-resynthesizer gimp-wavelet-denoise-plugin gimp-wavelet-decompose gimp-luminosity-masks GREYCstoration-gimp ufraw-gimp gimp-elsamuko gimp-normalmap gimpfx-foundry gimp-lqr-plugin gimp-data-extras gimp-heif-plugin gimp-paint-studio gimp-fourier-plugin gimp-focusblur-plugin gimp-high-pass-filter gimp-layer-via-copy-cut
+sudo dnf install gimp gmic-gimp gimp-lensfun gimp-resynthesizer gimp-wavelet-denoise-plugin gimp-wavelet-decompose gimp-luminosity-masks ufraw-gimp gimp-elsamuko gimpfx-foundry gimp-lqr-plugin gimp-data-extras gimp-heif-plugin gimp-paint-studio gimp-fourier-plugin gimp-focusblur-plugin gimp-high-pass-filter gimp-layer-via-copy-cut
 
 sudo dnf install krita luminance-hdr rawtherapee darktable darktable-tools-noise 
 ```
