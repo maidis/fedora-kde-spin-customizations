@@ -11,6 +11,7 @@ sudo dnf upgrade --refresh
 sudo dnf config-manager --add-repo=https://negativo17.org/repos/fedora-nvidia.repo
 sudo dnf install dkms-nvidia nvidia-driver nvidia-settings nvidia-driver-libs.i686
 sudo dnf install nvidia-driver-cuda cuda-devel cuda-cudnn-devel cuda-gcc cuda-samples
+sudo dnf install mangohud
 sudo dnf upgrade --refresh
 
 sudo dnf copr enable zawertun/scrapyard
