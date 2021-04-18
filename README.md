@@ -34,7 +34,7 @@ sudo dkms install nvidia/440.64
 ```bash
 sudo dnf install thermald kernel-tools tlp powertop
 
-git clone https://github.com/jsalatas/plasma-pstate
+git clone https://github.com/AndrejOrsula/plasma-pstate
 cd plasma-pstate
 sudo ./install.sh
 ```
@@ -85,19 +85,15 @@ sudo dnf install kate git libstdc++-devel
 sudo dnf install clang-analyzer clang clang-tools-extra cppcheck kcachegrind clazy uncrustify
 sudo dnf install json-devel jsoncpp-devel curl-devel curlpp-devel gtest-devel tesseract-devel
 sudo dnf install opencv-devel opencv-core opencv-contrib
-sudo dnf install godot terminology gperftools
+sudo dnf install godot gperftools
 ```
 
 # Removal of some unused pre-installed software
 ```bash
 #TODO: some package names may be incorrect, they may not be removed (due to dependencies)
-sudo dnf remove kwrite akregator dragon konqueror korganizer kpat kmahjongg kmines kmag kontact kmail knode kf5-ktnef 
+sudo dnf remove akregator dragon korganizer kpat kmahjongg kmines kmag kontact kmail kf5-ktnef 
 
-sudo dnf remove kget ktp* calligra* dnfdragora
-
-sudo dnf remove pim-data-exporter akonadi-import-wizard kwalletmanager5
-
-sudo dnf remove abrt dnfdragora dnfdragora-updater
+sudo dnf remove abrt dnfdragora dnfdragora-updater kget
 ```
 
 # Cutelyst
