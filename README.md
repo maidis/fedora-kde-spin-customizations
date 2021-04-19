@@ -47,7 +47,7 @@ sudo dnf -y install steam libnsl.i686 libnsl2.i686 kernel-modules-extra gamemode
 
 # My favorite software
 ```bash
-sudo dnf install blender inkscape okteta
+sudo dnf install blender inkscape okteta ktorrent
 ```
 
 # Third-party repositories
