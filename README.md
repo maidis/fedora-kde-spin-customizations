@@ -172,8 +172,6 @@ sudo dnf install htop p7zip p7zip-plugins unrar xclip fatrace
 sudo dnf install audacity lmms kdenlive vlc flowblade avidemux-qt mkvtoolnix-gui shotcut
 sudo dnf install cinelerra-gg
 sudo dnf install https://www.ocenaudio.com/downloads/ocenaudio_centos8.rpm
-
-mkdir ~/.cache/vlc
 ```
 - [Unable to save subtitles on Linux](https://github.com/exebetche/vlsub/issues/213)
 
