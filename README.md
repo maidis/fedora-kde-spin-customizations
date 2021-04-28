@@ -151,7 +151,20 @@ sudo dnf install sigil calibre
 # Dropbox installation
 ```bash
 cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
-ln -s ~/.dropbox-dist/dropboxd ~/.config/autostart-scripts/ 
+mkdir -p ~/.config/autostart/
+cat >> /home/maidis/.config/autostart/dropbox.desktop <<EOL
+[Desktop Entry]
+Version=1.0
+Name=Dropbox
+GenericName=File Sharing
+Exec=~/.dropbox-dist/dropboxd
+StartupNotify=true
+Terminal=false
+Icon=dropbox
+Type=Application
+Categories=Network
+EOL
+sudo chmod +x dropbox.desktop
 ~/.dropbox-dist/dropboxd
 
 sudo dnf install dolphin-plugins
