@@ -297,3 +297,8 @@ sudo dnf install gimp gmic-gimp gimp-lensfun gimp-resynthesizer gimp-wavelet-den
 
 sudo dnf install krita luminance-hdr rawtherapee darktable darktable-tools-noise 
 ```
+
+# Zoom
+```
+sudo dnf install https://zoom.us/client/latest/zoom_x86_64.rpm
+```
