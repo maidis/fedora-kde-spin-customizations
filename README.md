@@ -98,8 +98,8 @@ sudo dnf remove abrt dnfdragora dnfdragora-updater kget
 
 # Cutelyst
 ```bash
-sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/home:buschmann23:Cutelyst:devel/Fedora_32/home:buschmann23:Cutelyst:devel.repo
-sudo dnf install cutelyst2-devel
+sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/home:buschmann23:Cutelyst:devel/Fedora_34/home:buschmann23:Cutelyst:devel.repo
+sudo dnf install cutelee6-qt5-devel cutelyst3-qt5-devel libASqlQt5-devel
 ```
 
 # Visual Studio Code
