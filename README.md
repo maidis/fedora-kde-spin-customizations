@@ -290,6 +290,7 @@ xclip -sel clip < ~/.ssh/id_rsa.pub
 - [Setting your commit email address](https://help.github.com/en/articles/setting-your-commit-email-address)
 - [Generating a new SSH key and adding it to the ssh-agent](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 - [Adding a new SSH key to your GitHub account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account)
+- [GitHub Desktop](https://github.com/shiftkey/desktop/releases)
 
 # Photo Editing
 ```bash
