@@ -34,7 +34,7 @@ sudo dkms install nvidia/440.64
 ```bash
 sudo dnf install thermald kernel-tools tlp powertop
 
-git clone https://github.com/AndrejOrsula/plasma-pstate
+git clone https://github.com/frankenfruity/plasma-pstate
 cd plasma-pstate
 sudo ./install.sh
 ```
