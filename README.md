@@ -258,7 +258,7 @@ getenforce
 
 # Fonts
 ```bash
-sudo dnf install impallari-raleway-fonts google-roboto-fonts google-roboto-mono-fonts google-noto-sans-fonts google-noto-serif-fonts lato-fonts
+sudo dnf install -y fira-code-fonts impallari-raleway-fonts lato-fonts 'mozilla-fira*' 'google-roboto*'
 sudo dnf install cabextract
 sudo rpm -i https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm
 ```
