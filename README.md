@@ -180,7 +180,9 @@ sudo dnf install dolphin-plugins
 
 # Multimedia packages
 ```bash
-sudo dnf -y install gstreamer-plugins-base gstreamer1-plugins-base gstreamer-plugins-bad gstreamer-plugins-ugly gstreamer1-plugins-ugly gstreamer-plugins-good-extras gstreamer1-plugins-good-extras gstreamer1-plugins-bad-freeworld ffmpeg gstreamer-ffmpeg gstreamer1-plugins-bad-free-extras mencoder youtube-dl elisa-player krecorder
+sudo dnf install -y gstreamer1-plugins-{bad-*,good-*,ugly-*,base} gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel ffmpeg gstreamer-ffmpeg
+sudo dnf install -y lame* --exclude=lame-devel
+sudo dnf install -y mencoder youtube-dl elisa-player krecorder
 ```
 
 # Tools
