@@ -6,6 +6,14 @@ My efforts to make Fedora KDE spin more usable for my needs
 sudo dnf upgrade --refresh
 ```
 
+# Firmware update
+```bash
+sudo fwupdmgr get-devices
+sudo fwupdmgr refresh --force
+sudo fwupdmgr get-updates
+sudo fwupdmgr update
+```
+
 # NVIDIA drivers
 ```bash
 sudo dnf config-manager --add-repo=https://negativo17.org/repos/fedora-nvidia.repo
