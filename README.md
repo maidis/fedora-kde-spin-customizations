@@ -18,7 +18,7 @@ sudo fwupdmgr update
 ```bash
 sudo dnf config-manager --add-repo=https://negativo17.org/repos/fedora-nvidia.repo
 sudo dnf install dkms-nvidia nvidia-driver nvidia-settings nvidia-driver-libs.i686
-sudo dnf install nvidia-driver-cuda cuda-devel cuda-cudnn-devel cuda-gcc cuda-samples
+sudo dnf install nvidia-driver-cuda cuda-devel cuda-cudnn-devel cuda-gcc
 sudo dnf install mangohud
 sudo dnf upgrade --refresh
 
@@ -42,9 +42,12 @@ sudo dkms install nvidia/440.64
 ```bash
 sudo dnf install thermald kernel-tools tlp powertop
 
-git clone https://github.com/frankenfruity/plasma-pstate
-cd plasma-pstate
-sudo ./install.sh
+#git clone https://github.com/frankenfruity/plasma-pstate
+#cd plasma-pstate
+#sudo ./install.sh
+
+sudo dnf copr enable angstr0m/plasma-pstate
+sudo dnf in plasma-pstate
 ```
 
 # Steam installation
@@ -86,7 +89,7 @@ sudo usermod -a -G vboxusers maidis
 ```bash
 sudo dnf install SFML-devel love Box2D-devel glew-devel
 sudo dnf install SDL2-devel SDL2_gfx-devel SDL2_net-devel SDL2_ttf-devel SDL2_image-devel SDL2_mixer-devel
-sudo dnf install qt-creator* qt5-devel qt5 qt5*-devel
+#sudo dnf install qt-creator* qt5-devel qt5 qt5*-devel
 sudo dnf install fedora-packager astyle doxygen graphviz-devel
 sudo dnf groupinstall 'C Development Tools and Libraries'
 sudo dnf install kate git libstdc++-devel
@@ -99,7 +102,7 @@ sudo dnf install godot gperftools
 # Removal of some unused pre-installed software
 ```bash
 #TODO: some package names may be incorrect, they may not be removed (due to dependencies)
-sudo dnf remove akregator dragon korganizer kpat kmahjongg kmines kmag kontact kmail kf5-ktnef 
+sudo dnf remove akregator dragon korganizer kpat kmahjongg kmines kmag kontact kmail kf5-ktnef kwrite
 
 sudo dnf remove abrt dnfdragora dnfdragora-updater kget
 ```
@@ -160,7 +163,7 @@ sudo dnf install sigil calibre
 ```bash
 cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
 mkdir -p ~/.config/autostart/
-cat >> /home/maidis/.config/autostart/dropbox.desktop <<EOL
+cat >> ~/.config/autostart/dropbox.desktop <<EOL
 [Desktop Entry]
 Version=1.0
 Name=Dropbox
@@ -172,7 +175,7 @@ Icon=dropbox
 Type=Application
 Categories=Network
 EOL
-sudo chmod +x dropbox.desktop
+sudo chmod +x ~/.config/autostart/dropbox.desktop
 ~/.dropbox-dist/dropboxd
 
 sudo dnf install dolphin-plugins
@@ -194,7 +197,7 @@ sudo dnf install htop p7zip p7zip-plugins unrar xclip fatrace
 ```bash
 sudo dnf install audacity lmms kdenlive vlc flowblade avidemux-qt mkvtoolnix-gui shotcut
 sudo dnf install cinelerra-gg
-sudo dnf install https://www.ocenaudio.com/downloads/ocenaudio_centos8.rpm
+sudo dnf install https://www.ocenaudio.com/downloads/index.php/ocenaudio_fedora35.rpm
 ```
 - [Unable to save subtitles on Linux](https://github.com/exebetche/vlsub/issues/213)
 
@@ -259,7 +262,7 @@ getenforce
 # Fonts
 ```bash
 sudo dnf install -y fira-code-fonts impallari-raleway-fonts lato-fonts 'mozilla-fira*' 'google-roboto*'
-sudo dnf install cabextract
+sudo dnf install cabextract xorg-x11-font-utils
 sudo rpm -i https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm
 ```
 
