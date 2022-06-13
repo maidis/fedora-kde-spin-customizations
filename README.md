@@ -273,6 +273,10 @@ getenforce
 sudo dnf install -y fira-code-fonts impallari-raleway-fonts lato-fonts 'mozilla-fira*' 'google-roboto*'
 sudo dnf install cabextract xorg-x11-font-utils
 sudo rpm -i https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm
+
+#sudo -s dnf copr enable dawid/better_fonts
+#sudo -s dnf install fontconfig-font-replacements
+#sudo -s dnf install fontconfig-enhanced-defaults
 ```
 
 #  Document editing
