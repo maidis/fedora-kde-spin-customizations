@@ -40,7 +40,14 @@ sudo dkms install nvidia/440.64
 # CPU tools
 
 ```bash
-sudo dnf install thermald kernel-tools tlp powertop
+sudo dnf install thermald kernel-tools tlp tlp-rdw powertop lm_sensors xset
+
+sudo sensors-detect
+
+#sudo systemctl mask power-profiles-daemon
+
+- [Fedora 36 Post Install Guide - Battery Life](https://github.com/devangshekhawat/Fedora-36-Post-Install-Guide#battery-life)
+- [tlp actively breaks power-profiles-daemon when installed](https://bugzilla.redhat.com/show_bug.cgi?id=2028701)
 
 #git clone https://github.com/frankenfruity/plasma-pstate
 #cd plasma-pstate
