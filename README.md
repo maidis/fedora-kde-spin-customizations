@@ -204,7 +204,7 @@ sudo dnf install htop p7zip p7zip-plugins unrar xclip fatrace
 
 # Audio/video software
 ```bash
-sudo dnf install audacity lmms kdenlive vlc flowblade avidemux-qt mkvtoolnix-gui shotcut
+sudo dnf install audacity lmms kdenlive vlc flowblade avidemux-qt mkvtoolnix-gui shotcut HandBrake-gui
 sudo dnf install cinelerra-gg
 sudo dnf install https://www.ocenaudio.com/downloads/index.php/ocenaudio_fedora35.rpm
 ```
