@@ -194,7 +194,7 @@ sudo dnf install dolphin-plugins
 ```bash
 sudo dnf install -y gstreamer1-plugins-{bad-*,good-*,ugly-*,base} gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel ffmpeg gstreamer-ffmpeg
 sudo dnf install -y lame* --exclude=lame-devel
-sudo dnf install -y mencoder youtube-dl elisa-player krecorder
+sudo dnf install -y mencoder yt-dlp elisa-player krecorder
 ```
 
 # Tools
