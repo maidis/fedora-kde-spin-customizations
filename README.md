@@ -16,7 +16,7 @@ sudo fwupdmgr update
 
 # NVIDIA drivers
 ```bash
-sudo dnf config-manager --add-repo=https://negativo17.org/repos/fedora-nvidia.repo
+sudo dnf config-manager addrepo --from-repofile=https://negativo17.org/repos/fedora-nvidia.repo
 sudo dnf install dkms-nvidia nvidia-driver nvidia-settings nvidia-driver-libs.i686
 sudo dnf install nvidia-driver-cuda cuda-devel cuda-cudnn-devel cuda-gcc
 sudo dnf install mangohud
@@ -61,7 +61,7 @@ sudo dnf in plasma-pstate
 
 # Steam installation
 ```bash
-sudo dnf config-manager --add-repo=https://negativo17.org/repos/fedora-steam.repo
+sudo dnf config-manager addrepo --from-repofile=https://negativo17.org/repos/fedora-steam.repo
 sudo dnf -y install steam libnsl.i686 libnsl2.i686 kernel-modules-extra gamemode
 ```
 
@@ -118,7 +118,7 @@ sudo dnf remove abrt dnfdragora dnfdragora-updater kget
 
 # Cutelyst
 ```bash
-sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/home:/buschmann23:/Cutelyst:/devel/Fedora_39/home:buschmann23:Cutelyst:devel.repo
+sudo dnf config-manager addrepo --from-repofile=https://download.opensuse.org/repositories/home:/buschmann23:/Cutelyst:/devel/Fedora_39/home:buschmann23:Cutelyst:devel.repo
 sudo dnf install cutelyst4-qt6-devel cutelyst4-qt6-docs*
 ```
 
